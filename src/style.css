@@ -46,7 +46,7 @@ h1 {
 
 .complete {
   text-decoration: line-through;
-  color: red;
+  color: rgb(164, 22, 22);
 }
 
 .btn {
