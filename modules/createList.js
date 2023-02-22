@@ -122,8 +122,8 @@ const newList = (todo, list) => {
   const enter = document.querySelector('.enter');
 
   // add element to list on keypress
-  add.addEventListener('keypress', (e) => {
-    if (e.code === 'Enter') {
+  add.addEventListener('keypress', (event) => {
+    if (event.code === 'Enter') {
       methods.addItem(add.value);
       newList(todo, list);
     }
