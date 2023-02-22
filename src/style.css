@@ -1,22 +1,22 @@
 body {
   box-sizing: border-box;
-  }
-  
-  h1 {
+}
+
+h1 {
   text-align: center;
   margin-top: 5%;
   margin-bottom: 0;
-  }
-  
-  .to-do {
+}
+
+.to-do {
   list-style: none;
   margin: 10% auto;
   max-width: 40%;
   padding-inline-start: 0;
   box-shadow: 5px 5px 10px grey;
-  }
-  
-  .add {
+}
+
+.add {
   width: 100%;
   box-sizing: border-box;
   line-height: 25px;
@@ -25,14 +25,14 @@ body {
   font-style: italic;
   color: gray;
   font-weight: bold;
-  }
-  
-  .main {
+}
+
+.main {
   display: flex;
   padding: 3% 0;
-  }
-  
-  .edit {
+}
+
+.edit {
   display: block;
   resize: none;
   border: none;
@@ -42,34 +42,34 @@ body {
   width: 200px;
   outline: none;
   font-size: 16px;
-  }
-  
-  .complete {
+}
+
+.complete {
   text-decoration: line-through;
   color: red;
-  }
-  
-  .btn {
+}
+
+.btn {
   display: block;
   text-align: center;
   text-decoration: none;
   color: gray;
-  }
-  
-  .to-do li {
+}
+
+.to-do li {
   border-bottom: 1px solid lightgray;
   display: flex;
   line-height: 35px;
   align-items: center;
   justify-content: space-between;
   padding: 0 3%;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
   color: green;
-  }
-  
-  .optcard {
+}
+
+.optcard {
   display: flex;
   border: 1px solid;
   position: relative;
@@ -85,51 +85,50 @@ body {
   flex-wrap: wrap;
   margin-right: -2%;
   width: 10%;
-  }
-  
-  .changeback {
+}
+
+.changeback {
   background-color: lightyellow;
-  }
-  
-  .optcard p {
+}
+
+.optcard p {
   margin: 0;
   padding: 5%;
   width: 100%;
-  }
-  
-  .optcard p:hover {
+}
+
+.optcard p:hover {
   background: rgb(195, 87, 19);
   color: black;
-  }
-  
-  .inactive {
+}
+
+.inactive {
   display: none;
-  }
-  
-  .enter,
-  .refresh,
-  .options {
+}
+
+.enter,
+.refresh,
+.options {
   border: none;
   background: inherit;
-  }
-  
-  .enter:hover,
-  .refresh:hover,
-  .options:hover {
+}
+
+.enter:hover,
+.refresh:hover,
+.options:hover {
   cursor: pointer;
-  }
-  
-  .to-do li:last-child {
+}
+
+.to-do li:last-child {
   display: block;
-  }
-  
-  .to-do li:nth-child(2) {
+}
+
+.to-do li:nth-child(2) {
   display: flex;
   padding: 3%;
-  }
-  
- 
-  
-  
-  
-  
+}
+
+
+
+
+
