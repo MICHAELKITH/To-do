@@ -1,0 +1,56 @@
+body {
+  box-sizing: border-box;
+}
+
+.to-do {
+  list-style: none;
+  margin: 10% auto;
+  max-width: 40%;
+  padding-inline-start: 0;
+  box-shadow: 5px 5px 10px grey;
+}
+
+.to-do li {
+  border-bottom: 1px solid lightgray;
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h3 {
+  margin: 0;
+}
+
+.add {
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 25px;
+  border: none;
+  outline: none;
+  font-style: italic;
+  color: gray;
+  font-weight: bold;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: gray;
+}
+
+.enter,
+.refresh {
+  border: none;
+  background: inherit;
+}
+
+.enter:hover,
+.refresh:hover {
+  cursor: pointer;
+}
+
+.to-do li:last-child {
+  display: block;
+}
