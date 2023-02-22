@@ -2,24 +2,18 @@ body {
   box-sizing: border-box;
 }
 
+h1 {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
 .to-do {
   list-style: none;
   margin: 10% auto;
   max-width: 40%;
   padding-inline-start: 0;
   box-shadow: 5px 5px 10px grey;
-}
-
-.to-do li {
-  border-bottom: 1px solid lightgray;
-  padding: 3%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-h3 {
-  margin: 0;
 }
 
 .add {
@@ -33,6 +27,28 @@ h3 {
   font-weight: bold;
 }
 
+.main {
+  display: flex;
+  padding: 3% 0;
+}
+
+.edit {
+  display: block;
+  resize: none;
+  border: none;
+  padding: 5%;
+  height: 20px;
+  overflow: auto;
+  width: 200px;
+  outline: none;
+  font-size: 16px;
+}
+
+.complete {
+  text-decoration: line-through;
+  color: red;
+}
+
 .btn {
   display: block;
   text-align: center;
@@ -40,17 +56,74 @@ h3 {
   color: gray;
 }
 
+.to-do li {
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  line-height: 35px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3%;
+}
+
+.btn:hover {
+  color: green;
+}
+
+.optcard {
+  display: flex;
+  border: 1px solid;
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  text-align: center;
+  background: lightgray;
+  border-radius: 5px;
+  font-weight: 550;
+  text-transform: capitalize;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: -2%;
+  width: 10%;
+}
+
+.changeback {
+  background-color: lightyellow;
+}
+
+.optcard p {
+  margin: 0;
+  padding: 5%;
+  width: 100%;
+}
+
+.optcard p:hover {
+  background: rgb(195, 87, 19);
+  color: black;
+}
+
+.inactive {
+  display: none;
+}
+
 .enter,
-.refresh {
+.refresh,
+.options {
   border: none;
   background: inherit;
 }
 
 .enter:hover,
-.refresh:hover {
+.refresh:hover,
+.options:hover {
   cursor: pointer;
 }
 
 .to-do li:last-child {
   display: block;
+}
+
+.to-do li:nth-child(2) {
+  display: flex;
+  padding: 3%;
 }

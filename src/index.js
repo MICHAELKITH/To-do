@@ -1,28 +1,9 @@
-// Import CSS and the createList function
+import createList from '../modules/createList.js';
 import './style.css';
-import displayList from '../modules/createList.js';
 
-// Get the DOM element where the list will be displayed
-const todoList = document.querySelector('.to-do');
+// Retrieve the list data from local storage
+const list = JSON.parse(localStorage.getItem('listData')) || [];
 
-// Define the list of items to display
-const itemList = [
-  {
-    description: 'Wash The Dishes',
-    completed: false,
-    index: 1,
-  },
-  {
-    description: 'Cleaning ',
-    completed: false,
-    index: 2,
-  },
-  {
-    description: 'Cooking',
-    completed: false,
-    index: 3,
-  },
-];
-
-// Display the list of items
-displayList(todoList, itemList);
+// Render the list in the todo element
+const todo = document.querySelector('.to-do');
+createList(todo, list);
