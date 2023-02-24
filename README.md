@@ -51,7 +51,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]()
+- [Live Demo Link](https://michaelkith.github.io/To-do/)
 
 ## Loom Video <a name="loom"></a>
 
