@@ -1,4 +1,4 @@
-export default function addCheckboxEventListeners(checkboxes, list) {
+const addCheckboxEventListeners = (checkboxes, list) => {
   checkboxes.forEach((checkbox) => {
     const { parentElement } = checkbox;
     const index = Number(parentElement.querySelector('.no').innerText);
@@ -15,4 +15,5 @@ export default function addCheckboxEventListeners(checkboxes, list) {
       }
     });
   });
-}
+};
+module.exports = addCheckboxEventListeners;
